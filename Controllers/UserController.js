@@ -311,7 +311,7 @@ const vnpayReturn = asyncHandler(async (req, res) => {
 
     if (secureHash === signed) {
       res.redirect(
-        "http://localhost:3000/?vnp_Params=" +
+        "http://localhost:3000/thanks?vnp_Params=" +
           encodeURIComponent(vnp_Params["vnp_ResponseCode"])
       );
     } else {
