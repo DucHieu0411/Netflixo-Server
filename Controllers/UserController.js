@@ -355,9 +355,9 @@ const vnpayPayment = asyncHandler(async (req, res) => {
     // var createDate = dateFormat(date, "yyyymmddHHmmss");
     // var orderId = dateFormat(date, "HHmmss");
 
-    var createDate = moment().format("YMDHmmss");
-    var expireDate = moment().add(15, "minutes").format("YMDHmmss");
-    var orderId = moment().format("h:mm:ss a");
+    var createDate = moment().format("YYYYMMDDHHmmss");
+    var expireDate = moment().add(15, "minutes").format("YYYYMMDDHHmmss");
+    var orderId = moment().format("hmmss");
 
     var amount = bodyData.amount;
     var bankCode = bodyData.bankCode;
